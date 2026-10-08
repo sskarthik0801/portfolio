@@ -1,0 +1,161 @@
+baseURL: "https://sskarthik0801.github.io/portfolio/"
+languageCode: "en-us"
+title: "Karth"
+theme: hugo-profile
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  page: ["HTML", "RSS"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Karth | Systems Engineering"
+  description: "Mechanical engineering grad student at Purdue focused on V&V and autonomous vehicle systems"
+  favicon: "/fav.png"
+  theme:
+    defaultTheme: "dark"
+
+  navbar:
+    align: ms-auto
+    brandName: "Karth"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Karth."
+    subtitle: "I validate the systems that drive themselves."
+    content: "Mechanical engineering grad student at Purdue, focused on verification and validation of autonomous vehicle systems."
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "/resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/sskarthik0801
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/YOUR-HANDLE
+        - icon: fas fa-envelope
+          url: mailto:YOUR-EMAIL
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I'm a mechanical engineering grad student at Purdue working toward systems engineering roles in validation and verification for autonomous vehicles.
+
+      Before grad school I worked at Bosch on ECU calibration, engine and vehicle level parameter tuning, and cross-functional R&D program management.
+    skills:
+      enable: true
+      title: "Things I work with:"
+      items:
+        - "ISO 26262 / SOTIF"
+        - "V-model systems engineering"
+        - "ROS 2"
+        - "Autoware / AWSIM"
+        - "PX4"
+        - "Python"
+        - "ECU calibration"
+
+  experience:
+    enable: true
+    items:
+      - company: "Bosch"
+        companyUrl: "https://www.bosch.com"
+        jobs:
+          - name: "YOUR TITLE"
+            date: "MONTH YEAR - MONTH YEAR"
+            info:
+              content: "ECU calibration and vehicle-level tuning"
+            content: |
+              - ECU calibration and engine parameter tuning
+              - Vehicle-level parameter tuning
+              - Cross-functional R&D program management
+
+  education:
+    enable: true
+    items:
+      - title: "M.S. Robotics Engineering"
+        school:
+          name: "Purdue University"
+          url: "https://www.purdue.edu"
+        date: "YEAR - Present"
+        content: |-
+          Focus: Robotics, Autonomous Systems.
+      - title: "B.E./B.Tech, YOUR DEGREE"
+        school:
+          name: "YOUR UNDERGRAD SCHOOL"
+          url: ""
+        date: "YEAR - YEAR"
+        content: |-
+          Formula SAE: Technical and Suspension Team Head
+
+  projects:
+    enable: true
+    items:
+      - title: "Autoware Trajectory Replay in AWSIM"
+        content: "AV simulation and trajectory replay using Autoware Universe and AWSIM."
+        image: /images/projects/autoware.png
+        featured:
+          name: Demo
+          link: ""
+        badges:
+          - "Autoware"
+          - "ROS 2"
+          - "Simulation"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/sskarthik0801
+      - title: "RTK GNSS on a Locomotive"
+        content: "ROS 2 integration of a Swift Navigation Duro RTK receiver, with a full V-model systems engineering deliverable."
+        image: /images/projects/gnss.png
+        badges:
+          - "ROS 2"
+          - "GNSS/RTK"
+          - "V-model"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/sskarthik0801
+      - title: "PX4 Tuning on ARK FPV"
+        content: "Rate, attitude, and MPC position loop tuning on an ARK FPV flight controller using Flight Review logs."
+        image: /images/projects/px4.png
+        badges:
+          - "PX4"
+          - "Controls"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/sskarthik0801
+
+  contact:
+    enable: true
+    content: "Open to systems engineering and V&V internships. My inbox is always open."
+    btnName: "Mail me"
+    btnLink: "mailto:YOUR-EMAIL"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com/sskarthik0801
+      linkedin: https://www.linkedin.com/in/YOUR-HANDLE
