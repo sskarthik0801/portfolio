@@ -45,6 +45,14 @@
         line-height: 1.35;
     }
 
+    /* Crop portrait photos to a square so the about circle stays round and the hero frame stays square. */
+    body #about .image img,
+    body #hero .image img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: 50% 30%;
+    }
+
     body #projects .badge,
     body #projects .card-body small {
         font-size: 0.75rem;

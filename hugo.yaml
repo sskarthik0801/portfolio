@@ -41,7 +41,7 @@ params:
     title: "Karthik Seelam Sreenivas."
     subtitle: "Graduate Student Researcher at IDEAS Lab"
     content: "Master of Science in Robotics Engineering at Purdue University, West Lafayette, Indiana."
-    image: images/placeholders/me.svg
+    image: images/me.jpeg
     bottomImage:
       enable: true
     button:
