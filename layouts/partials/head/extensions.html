@@ -4,6 +4,16 @@
         font-size: 1rem;
     }
 
+    /* The theme forces the hero to full viewport height, leaving a big empty gap above About on tall screens. */
+    body #hero {
+        min-height: 0;
+        padding-bottom: 1rem !important;
+    }
+
+    body #about {
+        padding-top: 2rem !important;
+    }
+
     body #hero h1 {
         font-size: clamp(2.25rem, 5vw, 3.75rem);
         line-height: 1.1;
