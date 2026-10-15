@@ -53,6 +53,12 @@
         object-position: 50% 30%;
     }
 
+    /* Mixed photo/screenshot sizes: give every project card the same image frame. */
+    body #projects .card-img-top {
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+    }
+
     body #projects .badge,
     body #projects .card-body small {
         font-size: 0.75rem;

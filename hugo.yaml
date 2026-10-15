@@ -41,7 +41,7 @@ params:
     title: "Karthik Seelam Sreenivas."
     subtitle: "Graduate Student Researcher at IDEAS Lab"
     content: "Master of Science in Robotics Engineering at Purdue University, West Lafayette, Indiana."
-    image: images/me.jpeg
+    image: images/first_pic.jpeg
     bottomImage:
       enable: true
     button:
@@ -153,7 +153,7 @@ params:
           - "Arduino"
       - title: "Human Driving Replay for Autoware"
         content: "Learning to drive from human decisions: record how a person drives in simulation, understand it, and have Autoware's autonomous stack reproduce it. A human drives the ego vehicle in the AWSIM simulator while the full Autoware stack runs, with pose, speed and steering recorded to ROS 2 bags. The bags are turned into driving-style features (speed profile, acceleration and braking, jerk, steering and lateral acceleration), and a ROS 2 trajectory replayer node feeds the recorded human path and speed profile into Autoware's planning pipeline so its own controller drives the car autonomously along the human's path at the human's speed."
-        image: images/placeholders/autoware.svg
+        image: images/autoware.png
         badges:
           - "ROS 2 Humble"
           - "Autoware"
@@ -164,7 +164,7 @@ params:
             url: https://github.com/sskarthik0801/Autoware_human_style_trajectory
       - title: "Terrain Planning and Control for Rovers Using CNN"
         content: "Oct 2025 – Nov 2025. Built a CNN-based semantic segmentation system (computer vision driven dataset) to classify diverse terrain types and infer dynamic properties (slope, friction, traversability) directly from onboard camera, RADAR, LiDAR and IMU data. Designed a physics-informed dynamic cost map that evaluates real-time terrain difficulty, enabling computation of both fastest and energy-optimal routes across unstructured environments. Implemented A* and RRT* planners in Gazebo to generate safe, efficient paths for rescue and extraterrestrial exploration rovers under varying terrain conditions. Global path is generated within 10 seconds, and a local planner generates the obstacle avoided path instantly."
-        image: images/placeholders/terrain.svg
+        image: images/terrain.png
         badges:
           - "CNN"
           - "A* / RRT*"
