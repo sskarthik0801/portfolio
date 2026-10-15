@@ -142,6 +142,15 @@ params:
   projects:
     enable: true
     items:
+      - title: "Sparky AI – Companion Robot"
+        content: "A voice-controlled robotic desk companion built on a WowRobo SO-101 arm with LeRobot, running on an AMD Ryzen AI laptop. Sparky tracks faces, tutors kids by looking at their homework through a camera, and responds to voice commands. The system integrates faster-whisper speech recognition with local LLM (Llama 3.2 3B via Ollama) intent routing, Google Gemini vision for homework analysis from an overhead camera, MediaPipe face tracking with a PID controller driving the shoulder pan joint, Kokoro-ONNX neural text-to-speech, interpolated arm pose control, and Arduino-driven OLED eye expressions, all coordinated by a sleeping → tracking → desk-view state machine. 2nd Prize, AMD Track, StarkHacks."
+        image: images/projects/sparky.jpeg
+        badges:
+          - "SO-101 / LeRobot"
+          - "Computer Vision"
+          - "PID Control"
+          - "Gemini"
+          - "Arduino"
       - title: "Terrain Planning and Control for Rovers Using CNN"
         content: "Oct 2025 – Nov 2025. Built a CNN-based semantic segmentation system (computer vision driven dataset) to classify diverse terrain types and infer dynamic properties (slope, friction, traversability) directly from onboard camera, RADAR, LiDAR and IMU data. Designed a physics-informed dynamic cost map that evaluates real-time terrain difficulty, enabling computation of both fastest and energy-optimal routes across unstructured environments. Implemented A* and RRT* planners in Gazebo to generate safe, efficient paths for rescue and extraterrestrial exploration rovers under varying terrain conditions. Global path is generated within 10 seconds, and a local planner generates the obstacle avoided path instantly."
         image: images/placeholders/terrain.svg
